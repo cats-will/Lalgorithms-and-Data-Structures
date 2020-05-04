@@ -39,8 +39,7 @@ bool BFS(const vector<vector<int>> &G, vector<edge> &e, vector<int> &dist,
     return dist[t] != -1;
 }
  
-int
-DFS(const vector<vector<int>> &G, vector<edge> &e, vector<int> &dist, vector<int> &p, int s, int t, int flow = INF) {
+int DFS(const vector<vector<int>> &G, vector<edge> &e, vector<int> &dist, vector<int> &p, int s, int t, int flow = INF) {
     if (flow == 0 || s == t) {
         return flow;
     }
@@ -77,6 +76,7 @@ int Dinic(vector<vector<int> > &G, vector<edge> &e, int s, int t) {
 }
  
 int main() {
+ 
   ifstream fin("matching.in");
   ofstream fout("matching.out");
     
@@ -84,6 +84,7 @@ int main() {
   fin >> n >> m >> k;
   vector<vector<int> > G(n + m + 2);
   vector<edge> e;
+ 
   for (int i = 0; i < k; ++i) {
     int from, to;
     fin >> from >> to;
@@ -97,4 +98,3 @@ int main() {
   }
   fout << Dinic(G, e, 0, m + n + 1) << endl;
 }
-

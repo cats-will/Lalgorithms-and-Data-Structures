@@ -1,15 +1,14 @@
 # Algorithms-and-Data-Structures
 
-[5]
+[5] - set, map, multimap, linkedMap
 
-[6]
+[8] - init graphs
 
-[7]
+[9] - algorithms with graphs
 
-[8]
+[11] - shortest way 
 
-[9]
+[12] -
 
-[10]
+[13] - 
 
-[11]
